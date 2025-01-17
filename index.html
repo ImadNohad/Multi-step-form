@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>TP2 Javascript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar start -->
+      <div class="sidebar">
+        <div class="sidebar-step">
+          <span class="step-number blue">1</span>
+          <div>
+            <span class="step-title">Step 1</span>
+            <h3 class="step-text">Your info</h3>
+          </div>
+        </div>
+
+        <div class="sidebar-step">
+          <span class="step-number">2</span>
+          <div>
+            <span class="step-title">Step 2</span>
+            <h3 class="step-text">Select plan</h3>
+          </div>
+        </div>
+
+        <div class="sidebar-step">
+          <span class="step-number">3</span>
+          <div>
+            <span class="step-title">Step 3</span>
+            <h3 class="step-text">Add-ons</h3>
+          </div>
+        </div>
+
+        <div class="sidebar-step">
+          <span class="step-number">4</span>
+          <div>
+            <span class="step-title">Step 4</span>
+            <h3 class="step-text">Summary</h3>
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar end -->
+
+      <div class="main">
+        <!-- Step 1 start -->
+        <div class="step-main">
+          <h2>Personal info</h2>
+          <p>Please provide your name, email address, and phone number.</p>
+
+          <div class="form-control">
+            <label for="txtName">Name</label>
+            <span></span>
+            <input
+              type="text"
+              name="txtName"
+              id="txtName"
+              placeholder="e.g. Stephen King"
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="txtEmail">Email Address</label>
+            <span></span>
+            <input
+              type="email"
+              name="txtEmail"
+              id="txtEmail"
+              placeholder="e.g. stephenking@lorem.com"
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="txtTel">Phone Number</label>
+            <span></span>
+            <input
+              type="tel"
+              name="txtTel"
+              id="txtTel"
+              placeholder="e.g. +1 234 567 890"
+            />
+          </div>
+        </div>
+        <!-- Step 1 end -->
+
+        <!-- Step 2 start -->
+        <div class="step-main hide">
+          <h2>Select your plan</h2>
+          <p>You have the option of monthly or yearly billing.</p>
+          <div class="plans">
+            <div class="plan" id="arcade">
+              <img src="/assets/images/icon-arcade.svg" alt="" />
+              <span class="plan-name">Arcade</span>
+              <div class="plan-price">$9/mo</div>
+              <span class="hide">2 months free</span>
+            </div>
+            <div class="plan" id="advanced">
+              <img src="/assets/images/icon-advanced.svg" alt="" />
+              <span class="plan-name">Advanced</span>
+              <div class="plan-price">$12/mo</div>
+              <span class="hide">2 months free</span>
+            </div>
+            <div class="plan" id="pro">
+              <img src="/assets/images/icon-pro.svg" alt="" />
+              <span class="plan-name">Pro</span>
+              <div class="plan-price">$15/mo</div>
+              <span class="hide">2 months free</span>
+            </div>
+          </div>
+
+          <div class="monthly">
+            <span>Monthly</span>
+            <label class="switch">
+              <input type="checkbox" id="yearly" />
+              <span class="slider round"></span>
+            </label>
+            <span>Yearly</span>
+          </div>
+        </div>
+        <!-- Step 2 end -->
+
+        <!-- Step 3 start -->
+        <div class="step-main hide">
+          <h2>Pick add-ons</h2>
+          <p>Add-ons help enhance your gaming experience.</p>
+
+          <div class="addons">
+            <div class="addon">
+              <input type="checkbox" name="" id="" />
+              <div>
+                <span>Online service</span>
+                <div>Access to multiplayer games</div>
+              </div>
+              <div>+$1/mo</div>
+            </div>
+
+            <div class="addon">
+              <input type="checkbox" name="" id="" />
+              <div>
+                <span>Larger storage</span>
+                <div>Extra 1TB of cloud save</div>
+              </div>
+              <div>+$2/mo</div>
+            </div>
+
+            <div class="addon">
+              <input type="checkbox" name="" id="" />
+              <div>
+                <span>Customizable Profile</span>
+                <div>Custom theme on your profile</div>
+              </div>
+              <div>+$2/mo</div>
+            </div>
+          </div>
+        </div>
+        <!-- Step 3 end -->
+
+        <!-- Step 4 start -->
+        <div class="step-main hide">
+          <h2>Finishing up</h2>
+          <p>Double-check everything looks OK before confirming.</p>
+          <div class="summary">
+            <!-- Dynamically add subscription and add-on selections here -->
+            <div class="summary-text">
+              <div class="summary-plan">
+                <span></span>
+                <span></span>
+              </div>
+              <a id="changePlan" href="#">Change</a>
+              <hr />
+              <div class="summary-addons"></div>
+            </div>
+
+            <div class="total">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <!-- Step 4 end -->
+
+        <!-- Step 5 start -->
+        <div class="step-main center hide">
+          <div class="thanks">
+            <img src="/assets/images/icon-thank-you.svg" alt="" />
+            <h1>Thank you!</h1>
+            <p>
+              Thanks for confirming your subscription! We hope you have fun
+              using our platform. If you ever need support, please feel free to
+              email us at support@loremgaming.com.
+            </p>
+          </div>
+        </div>
+        <!-- Step 5 end -->
+
+        <div class="buttons">
+          <button id="btnBack" class="hide">Go Back</button>
+          <button id="btnNext">Next Step</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
