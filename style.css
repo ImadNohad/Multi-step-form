@@ -75,7 +75,7 @@ hr {
 }
 
 .sidebar {
-  background-image: url("/assets/images/bg-sidebar-desktop.svg");
+  background-image: url("./assets/images/bg-sidebar-desktop.svg");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 2.25rem;
